@@ -1,6 +1,7 @@
 <template>
   <div>
     Hi, {{ name }}
+    <p ref="text">Test</p>
   </div>
 </template>
 
@@ -12,7 +13,7 @@ export default {
     }
   },
   mounted () {
-    console.log(this.$el)
+    console.log(this.$refs.text)
   }
 }
 </script>
