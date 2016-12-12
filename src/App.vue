@@ -1,16 +1,17 @@
 <template>
   <div>
     <input v-model="name">
-    <p v-if="name && name !== 'frankind'">Hi, {{ name }}</p>
-    <p v-else-if="name === 'frankind'">:D</p>
-    <p v-else>No Data</p>
-    <button @click="sayHello(123)">Hello</button>
-    <p v-for="x in list">{{ x }}</p>
+    <hello name="frankind"></hello>
   </div>
 </template>
 
 <script>
+  import Hello from './components/Hello'
+
   export default {
+    components: {
+      Hello
+    },
     data () {
       return {
         name: '',
