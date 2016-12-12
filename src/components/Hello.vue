@@ -22,15 +22,15 @@ export default {
     console.log(this.$refs.text)
   },
   beforeUpdate () {
-    //change some data and not get infinite loop
+  // change some data and not get infinite loop
   },
   updated () {
-    //should not chnage data here it will be infinite loop
-    //call jquery
+  // should not chnage data here it will be infinite loop
+  // call jquery
   },
   beforeDestroy () {
-    //cleanup listener, callback, subsriber
-  }
+  // cleanup listener, callback, subsriber
+  },
   destroyed () {
 
   }
