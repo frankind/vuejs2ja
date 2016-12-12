@@ -1,16 +1,16 @@
 <template>
   <div>
     <input v-model="name">
-    <hello></hello>
+    <hello-component :name="name"></hello-component>
   </div>
 </template>
 
 <script>
-  import Hello from './components/Hello'
+  import HelloComponent from './components/Hello'
 
   export default {
     components: {
-      Hello
+      HelloComponent
     },
     data () {
       return {
