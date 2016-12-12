@@ -1,7 +1,8 @@
 <template>
   <div>
-      <input v-model="name">
-      <p v-show="name">Hi, {{ name }}</p>
+    <input v-model="name">
+    <p v-if="name">Hi, {{ name }}</p>
+    <p v-else>No Data</p>
   </div>
 </template>
 
