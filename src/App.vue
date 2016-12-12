@@ -1,7 +1,7 @@
 <template>
   <div>
     <input v-model="name">
-    <hello v-bind:name="name"></hello>
+    <hello :name="name"></hello>
   </div>
 </template>
 
