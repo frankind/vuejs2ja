@@ -20,6 +20,7 @@ export default {
   },
   mounted () {
     console.log(this.$refs.text)
+    $(this.$el)
   },
   beforeUpdate () {
   // change some data and not get infinite loop
