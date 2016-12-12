@@ -1,7 +1,6 @@
 var path = require('path')
 var config = require('../config')
 var utils = require('./utils')
-const webpack = require('webpack')
 var projectRoot = path.resolve(__dirname, '../')
 
 var env = process.env.NODE_ENV
@@ -91,12 +90,5 @@ module.exports = {
         browsers: ['last 2 versions']
       })
     ]
-  },
-  plugins: [
-    new webpack.ProvidePlugin({
-      'window.$': 'jquery',
-      '$': 'jquery',
-      'jQuery': 'jquery'
-    })
-  ]
+  }
 }
