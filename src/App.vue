@@ -1,7 +1,7 @@
 <template>
   <div>
     <input v-model="name">
-    <hello :name="name"></hello>
+    <hello></hello>
   </div>
 </template>
 
@@ -14,10 +14,7 @@
     },
     data () {
       return {
-        name: '',
-        list: [
-          1, 2, 3, 4, 5
-        ]
+        name: ''
       }
     },
     methods: {

@@ -6,6 +6,10 @@
 
 <script>
 export default {
-  props: ['name']
+  props: {
+    name: {
+      required: true
+    }
+  }
 }
 </script>
