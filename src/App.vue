@@ -1,7 +1,7 @@
 <template>
   <div>
       <input v-model="name">
-      <p v-if="name">Hi, {{ name }}</p>
+      <p v-show="name">Hi, {{ name }}</p>
   </div>
 </template>
 
