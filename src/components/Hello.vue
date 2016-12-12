@@ -12,8 +12,27 @@ export default {
       required: true
     }
   },
+  beforeCreate () {
+
+  },
+  created () {
+
+  },
   mounted () {
     console.log(this.$refs.text)
+  },
+  beforeUpdate () {
+    //change some data and not get infinite loop
+  },
+  updated () {
+    //should not chnage data here it will be infinite loop
+    //call jquery
+  },
+  beforeDestroy () {
+    //cleanup listener, callback, subsriber
+  }
+  destroyed () {
+
   }
 }
 </script>
