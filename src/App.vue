@@ -4,7 +4,7 @@
     <p v-if="name && name !== 'frankind'">Hi, {{ name }}</p>
     <p v-else-if="name === 'frankind'">:D</p>
     <p v-else>No Data</p>
-    <button @click="sayHello">Hello</button>
+    <button @click="sayHello(123)">Hello</button>
     <p v-for="x in list">{{ x }}</p>
   </div>
 </template>
@@ -20,8 +20,8 @@
       }
     },
     methods: {
-      sayHello () {
-        window.alert('Hi, ' + this.name)
+      sayHello (value) {
+        window.alert('Hi, ' + value)
       }
     }
   }
